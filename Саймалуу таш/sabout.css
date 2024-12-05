@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('530dec50f7740ca02a4548d860415a1e.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 80px; 
+}
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #f0a500;
+}
+
+/* Hero-секция */
+.about-hero {
+    text-align: center;
+    color: #fff;
+    padding: 10vh 0 15vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.about-hero img.hero-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+/* Блок "Наша история" */
+.company-history {
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 2em auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+.company-history img.history-image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1em;
+    border-radius: 8px;
+}
+
+/* Блок "Наши ценности" */
+.core-values {
+    text-align: center;
+    padding: 3em 2em;
+    color: white;
+    background: rgba(10, 10, 10, 0.6);
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    width: 250px;
+    padding: 1.5em;
+    background: rgba(121, 117, 117, 0.9);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.value-item i {
+    font-size: 2em;
+    color: #f0a500;
+    margin-bottom: 0.5em;
+}
+
+.value-item h3 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: #aca4a4;
+}
+
+
+.achievements {
+    padding: 3em 2em;
+    text-align: center;
+    text-decoration-color: rgb(7, 7, 7);
+    background: rgba(2, 2, 2, 0.6);
+    color: rgb(247, 248, 250);
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.achievement-item {
+    width: 250px;
+    padding: 1.5em;
+    text-decoration-color: beige;
+    background: rgba(168, 166, 166, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44, 43, 43, 0.3);
+}
+
+.achievement-item i {
+    font-size: 2em;
+    color: #f0a500;
+    margin-bottom: 0.5em;
+}
+
+.achievement-item h3 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: #363535;
+}
+
+/* Блок "Наша команда" */
+.team {
+    padding: 3em 2em;
+    background: rgba(3, 3, 3, 0.6);
+    text-align: center;
+    color: white;
+}
+
+.team h2 {
+    color: #fcfbfb;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    color: white;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #f0a500;
+    color: white;
+}
+
+.team-member h4 {
+    margin-top: 0.5em;
+    color: #f3f2f2;
+}
+
+/* Призыв к действию */
+.cta {
+    text-align: center;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2em;
+}
+
+.cta p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.cta .btn {
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #ffcb47;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.footer-links a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcb47;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .values-container, .achievements-container, .team-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,426 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('530dec50f7740ca02a4548d860415a1e.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f0a500;
+}
+
+
+.hero {
+    text-align: center;
+    color: #fff;
+    padding: 10vh 0 20vh;
+}
+
+.hero .title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ffcb47;
+}
+
+section {
+    padding: 3em 2em;
+    color: #fff;
+}
+
+#world {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.feature {
+    text-align: center;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 1em 0;
+    border-radius: 8px;
+}
+
+.feature i {
+    font-size: 2.5em;
+    color: #f0a500;
+    margin-bottom: 0.5em;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.feature p {
+    font-size: 1.1em;
+}
+
+.recent-projects {
+    text-align: center;
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-item h4 {
+    margin-top: 0.5em;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.recent-projects .btn {
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recent-projects .btn:hover {
+    background-color: #ffcb47;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.footer-links a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcb47;
+}
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f0a500;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.floating-icon:hover {
+    background-color: #ffcb47;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero .title {
+        font-size: 2em;
+    }
+
+    .projects-gallery {
+        flex-direction: column;
+    }
+}
+/* Основной стиль для меню */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+/* Кнопка-гамбургер */
+.menu-toggle {
+    display: none; /* Скрыть кнопку на десктопе */
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрытое меню на мобильных */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        z-index: 999;
+    }
+    
+    .menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Показать кнопку на мобильных */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu.active {
+        display: flex; /* Показать меню при активном классе */
+    }
+}
+/* Основные стили для всех устройств остаются прежними */
+
+@media (max-width: 768px) {
+    /* Шапка и навигация */
+    header nav ul {
+        flex-direction: column;           /* Меню будет располагаться вертикально */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;                   /* Увеличенный отступ для удобства на мобильных устройствах */
+    }
+
+    /* Заголовок контактной страницы */
+    .contact-header h1 {
+        font-size: 2em;                   /* Уменьшенный размер текста для заголовка */
+    }
+
+    .contact-header p {
+        font-size: 1em;
+    }
+
+    /* Секция контактной информации */
+    .contact-info {
+        flex-direction: column;           /* Размещение элементов контактной информации в колонку */
+        gap: 1.5em;
+    }
+
+    .contact-item {
+        width: 90%;                       /* Полная ширина для каждого контактного блока */
+        margin: 0 auto;
+    }
+
+    /* Форма обратной связи */
+    .contact-form {
+        padding: 2em 1em;                 /* Уменьшенные отступы вокруг формы */
+    }
+
+    .contact-form h2 {
+        font-size: 2em;                   /* Уменьшенный размер заголовка */
+    }
+
+    .contact-form label {
+        font-size: 1em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1em;
+        padding: 0.8em;                   /* Меньшая высота полей для ввода */
+    }
+
+    .contact-form button {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
+
+    /* Секция карты */
+    .map iframe {
+        width: 100%;                      /* Ширина карты по ширине экрана */
+        height: 300px;                    /* Высота карты меньше на мобильных */
+    }
+
+    /* Социальные иконки */
+    .social-media {
+        padding: 2em 1em;                 /* Меньший внутренний отступ */
+    }
+
+    .social-media h2 {
+        font-size: 1.8em;                 /* Меньший заголовок */
+    }
+
+    .social-icons {
+        gap: 1.5em;                       /* Уменьшенный отступ между иконками */
+    }
+
+    .social-icon {
+        font-size: 2em;                   /* Уменьшенный размер иконок */
+    }
+
+    footer p {
+        font-size: 1em;                   
+    }
+}
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.popup .btn {
+    background: #f0a500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.popup .btn:hover {
+    background: #ffcb47;
+}
+
+/* Back-to-top button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f0a500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    display: none;
+    font-size: 1.2em;
+    z-index: 2000;
+}
+
+.back-to-top:hover {
+    background: #ffcb47;
+}
+
+/* Scroll animations */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
